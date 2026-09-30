@@ -1,3 +1,12 @@
+"""
+RECORD CHECK  -  my version
+===========================
+
+Name  :  Muhammed Jazeel
+Lane  :  IT   
+Date  :  26 September 2026
+
+"""
 hostname = input("Enter a hostname: ")     
 gb_used = float(input("Enter GB used: "))     
 total_gb = float(input("Enter the total GB: "))    
