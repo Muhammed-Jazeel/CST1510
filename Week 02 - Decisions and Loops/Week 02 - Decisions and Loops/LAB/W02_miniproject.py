@@ -11,7 +11,7 @@ over_limit_count = 0
 while True:
     hostname = input("enter a hostname: ") 
     if hostname == "quit":
-        break    
+        break     
     gb_used = float(input("enter the gb used: "))
     gb_total = float(input("enter the total gb: "))
 
