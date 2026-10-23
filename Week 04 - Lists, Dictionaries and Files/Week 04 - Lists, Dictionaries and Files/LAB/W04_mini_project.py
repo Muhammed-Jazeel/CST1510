@@ -2,9 +2,9 @@
 RECORD CHECK  -  my version
 ===========================
 
-Name  :
-Lane  :  AI / Cyber / IT      (delete two)
-Date  :
+Name  : Muhammed Jazeel
+Lane  : IT     
+Date  : 16 October 2026
 
 """
 
