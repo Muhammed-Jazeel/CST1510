@@ -17,8 +17,8 @@ def status_of(percent):
         return "ok"
 def check(value, limit):
     """returns the amount of gb used and the difference"""
-    difference = limit - value 
-    percent = (value / limit) * 100
+    difference = limit - value  #to find the gb used left
+    percent = (value / limit) * 100 # to find the %
     return difference, percent
 def print_report(label, value, limit, difference, percent, status):
     """prints the entire report"""
@@ -31,10 +31,10 @@ def print_report(label, value, limit, difference, percent, status):
     print(f"  {'free':<10}  :     {difference:>10.2f}")
     print(f"  {'percent':<10}  :  {percent:>10.2f}")
     print(f"  {'status':<10}  : {status:>10}")
-over_count = 0 
+over_count = 0 #for items exceeding the threshold 
 while True:
     label = input("enter the hostname: ")
-    if label == "quit":
+    if label == "quit": #exit loop whenever the user type "qut"
         break
     value = float(input("enter the gb used: "))
     limit = float(input("enter the total gb: "))
@@ -42,5 +42,5 @@ while True:
     status = status_of(percent)
     if status == "Over Limit":
         over_count += 1
-    print_report(label, value, limit, difference, percent, status)
+    print_report(label, value, limit, difference, percent, status) #Output the record block
 print(f"total records over limit: {over_count}")    
