@@ -31,11 +31,11 @@ def print_report(label, value, limit, difference, percent, status): # a dedicate
     print("=" * 34)
     print(f"  Record check  -  {label}")
     print("="* 34)
-    print(f"  {'used':<10}    :     {value:>10.2f}")
-    print(f"  {'total':<10}   :    {limit:>10.2f}")
-    print(f"  {'free':<10}    :     {difference:>10.2f}")
-    print(f"  {'percent':<10} :  {percent:>10.2f}")
-    print(f"  {'status':<10}  : {status:>10}")
+    print(f"  {'used':<10} : {value:>10.2f}")
+    print(f"  {'total':<10} : {limit:>10.2f}")
+    print(f"  {'free':<10} : {difference:>10.2f}")
+    print(f"  {'percent':<10} : {percent:>10.2f}")
+    print(f"  {'status':<10} : {status:>10}")
 
 
 
