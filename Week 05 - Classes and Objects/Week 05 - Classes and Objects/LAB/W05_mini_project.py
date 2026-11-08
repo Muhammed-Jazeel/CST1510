@@ -47,9 +47,9 @@ def load_records(path): #defines a function that accepts a file
 
 filename = "server_sample.txt" #created a sample file with data
 with open(filename, "w") as f:
-    f.write("SRV-01, 85.0, 100\n")
-    f.write("SRV-02, 101.0, 100\n")
-    f.write("SRV-03, 95.0, 100\n")
+    f.write("SRV-01, 85.0, 80\n")
+    f.write("SRV-02, 101.0, 80\n")
+    f.write("SRV-03, 95.0, 80\n")
 
 records = load_records(filename) #Calls load_records() passing the file path
 
